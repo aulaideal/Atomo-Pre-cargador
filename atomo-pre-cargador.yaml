@@ -1,0 +1,91 @@
+name: Pre-cargador
+description: Nos permite cargar diferentes plugin jquery del tipo "Pre-Cargadores". 
+type: atom
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Habilitar Globalmente esta partícula.
+      default: true
+
+    info:
+      type: separator.note
+      class: alert alert-info
+      content: Esta partícula permite implementar un pre-cargador dentro de tu sitio web. 
+  
+
+    libreria:
+      type: select.select
+      label: Elija una libreria
+      description: Elija la libreria qwue desea usar para este átomo.
+      placeholder: 'Seleccionar...'
+      default: NProgress.js
+      options:
+         NProgress.js: NProgress.js
+         Pace.js: Pace.js
+
+
+    separador1:
+      type: separator.note
+      class: 'settings-param'
+      content: '<h4>Ajustes de <strong>NProgress.js</strong></h4>'
+
+    circulogiratorio:
+      type: enable.enable
+      label: Círculo giratorio     
+      default: true
+
+    colorNProgress:
+      type: input.colorpicker
+      label: Color
+      description: Escoge el color del Pre-cargador.
+      default: '#f89406'
+
+
+    separador2:
+      type: separator.note
+      class: 'settings-param'
+      content: '<h4>Ajustes de <strong>Pace.js</strong></h4>'
+
+    
+    tipoPaceJs:
+      type: select.select
+      label: Diseño de Pre-cargador
+      description: Escoge el diseño del Pre-cargador.
+      placeholder: 'Seleccionar...'
+      default: barber-shop
+      options:
+        pace-theme-barber-shop.css: Barber Shop
+        pace-theme-big-counter.css: Big Counter
+        pace-theme-bounce.css: Bounce
+        pace-theme-center-atom.css: Center Atom
+        pace-theme-center-circle.css: Center Circle
+        pace-theme-center-radar.css: Center Radar
+        pace-theme-center-simple.css: Center Simple
+        pace-theme-corner-indicator.css: Corner Indicator
+        pace-theme-flash.css: Flash
+        pace-theme-loading-bar.css: Loading Bar
+        pace-theme-mac-osx.css: Mac-Osx
+    
+    colorPaceJs:
+      type: select.select
+      label: Color
+      description: Escoge el color del Pre-cargador.
+      placeholder: 'Seleccionar...'
+      default: black
+      options:
+        black: Negro
+        blue: Azul
+        green: Verde
+        orange: Naranja
+        pink: Rosado
+        purple: Purpura
+        red: Rojo
+        silver: Plateado
+        white: Blanco
+        yellow: Amarillo
+
+
+    

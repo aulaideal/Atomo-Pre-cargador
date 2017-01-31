@@ -1,0 +1,40 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+ 
+
+{% block particle %}
+
+
+	{% assets in 'head' %}
+	{% if particle.enabled %}
+		{% if particle.libreria=='NProgress.js' %}
+			<link rel="stylesheet" href="{{ url('gantry-theme://css/nprogress.min.css') }}" type="text/css"/>
+			
+		{% elseif particle.libreria=='Pace.js'  %}				
+			<link rel="stylesheet" href="{{ url('gantry-theme://custom/css/pacethemes/'~particle.colorPaceJs~'/'~particle.tipoPaceJs) }}" type="text/css"/>
+
+		{% endif %}
+	{% endif %}
+{% endassets -%}
+{% endblock %}
+
+
+{% block javascript_footer %}
+{% if particle.enabled %}
+	{% if particle.libreria=='NProgress.js' %}
+		{{ parent() }}
+		<script src="{{ url('gantry-theme://js/nprogress.min.js') }}" type="text/javascript"></script>
+		<script type="text/javascript">
+						
+				NProgress.configure({ showSpinner: {{ particle.circulogiratorio|e }}, mycolorcustom:'{{particle.colorNProgress|e }}'});
+					NProgress.start();
+				NProgress.done();
+		</script>
+	{% elseif particle.libreria=='Pace.js'  %}
+		<script src="{{ url('gantry-theme://js/pace.min.js') }}" type="text/javascript"></script>
+		<script type="text/javascript">
+
+
+		</script>
+	{% endif %}
+{% endif %}
+{% endblock %}
