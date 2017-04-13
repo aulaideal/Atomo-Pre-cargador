@@ -2,6 +2,10 @@ name: Pre-cargador
 description: Nos permite cargar diferentes plugin jquery del tipo "Pre-Cargadores". 
 type: atom
 
+configuration:
+  caching:
+    type: static
+
 form:
   fields:
     enabled:
