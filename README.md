@@ -1,4 +1,4 @@
-# Atomo "Pre cargador"
+# Atomo "Pre-cargador"
 Este átomo para Gantry 5 nos permite incluir un pre-cargador dentro de nuestro sitio web.
 
 Instalación
