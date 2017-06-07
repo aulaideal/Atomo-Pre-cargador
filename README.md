@@ -1,7 +1,8 @@
 # Atomo "Pre-cargador"
 Este átomo para Gantry 5 nos permite incluir un pre-cargador dentro de nuestro sitio web.
 
-![subir](https://user-images.githubusercontent.com/9434043/26899438-b735d1be-4b94-11e7-8b71-8a2367fd896f.png)
+![precargador](https://user-images.githubusercontent.com/9434043/26899517-fb7e959a-4b94-11e7-945c-50e2fac32b3b.png)
+
 
 Instalación
 -----------
